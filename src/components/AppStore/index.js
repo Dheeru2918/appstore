@@ -1,7 +1,7 @@
 import {Component} from 'react'
 
-import TabScan from '../TabItem'
-import Apps from '../AppItem'
+import TabItem from '../TabItem'
+import AppItem from '../AppItem'
 
 const tabsList = [
   {tabId: 'SOCIAL', displayText: 'Social'},
@@ -324,7 +324,7 @@ class AppStore extends Component {
         <input type="text" onChange={this.changes} />
         <ul>
           {tabsList.map(eachItem => (
-            <TabScan
+            <TabItem
               index={eachItem}
               onChanged={this.onChanged(eachItem)}
               key={eachItem.tabId}
@@ -333,7 +333,7 @@ class AppStore extends Component {
         </ul>
         <div>
           <ul>
-            <Apps app={datas} />
+            <AppItem app={datas} />
           </ul>
         </div>
       </div>

@@ -1,4 +1,4 @@
-const App = props => {
+const AppItem = props => {
   const {app} = props
   app.map(eachItem => (
     <li>
@@ -10,4 +10,4 @@ const App = props => {
   ))
 }
 
-export default App
+export default AppItem

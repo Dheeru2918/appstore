@@ -1,4 +1,4 @@
-const TabScan = props => {
+const TabItem = props => {
   const {index, onChanged} = props
   const {tabId, displayText} = index
   const onChanges = tabIds => {
@@ -11,4 +11,4 @@ const TabScan = props => {
   )
 }
 
-export default TabScan
+export default TabItem
